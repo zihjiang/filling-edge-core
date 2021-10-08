@@ -1,0 +1,18 @@
+{
+  "pipelineId": "randomToIdentityToTrash",
+  "title": "Random To Identity To Trash",
+  "description": "",
+  "created": 1526188043079,
+  "lastModified": 1526188664,
+  "creator": "admin",
+  "lastModifier": "admin",
+  "lastRev": "0",
+  "uuid": "c600a23a-de52-4b22-961b-6e166f7de339",
+  "valid": true,
+  "metadata": {
+    "labels": []
+  },
+  "name": "randomToIdentityToTrash",
+  "sdcVersion": "3.4.0-SNAPSHOT",
+  "sdcId": "d67e5ea5-553a-11e8-afdc-27d45acea1fe"
+}

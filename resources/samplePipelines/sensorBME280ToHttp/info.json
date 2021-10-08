@@ -1,0 +1,18 @@
+{
+  "pipelineId": "sensorBME280ToHttp",
+  "title": "BME280 Sensor To HTTP",
+  "description": "",
+  "created": 1526188043336,
+  "lastModified": 1526188664,
+  "creator": "admin",
+  "lastModifier": "admin",
+  "lastRev": "0",
+  "uuid": "57e15176-80c2-4b97-8a1d-82f46bd65c66",
+  "valid": true,
+  "metadata": {
+    "labels": []
+  },
+  "name": "sensorBME280ToHttp",
+  "sdcVersion": "3.4.0-SNAPSHOT",
+  "sdcId": "d67e5ea5-553a-11e8-afdc-27d45acea1fe"
+}

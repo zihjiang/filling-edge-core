@@ -1,0 +1,23 @@
+
+
+// protoc -I simple/ simple/simple.proto --go_out=plugins=grpc:simple
+syntax = "proto3";
+
+package simple;
+
+service SimpleService {
+    rpc UnaryRPCExample (SimpleInputData) returns (SimpleOutputData) {}
+    rpc ServerStreamingRPC (SimpleInputData) returns (stream SimpleOutputData) {}
+    rpc ClientStreamingRPC (stream SimpleInputData) returns (SimpleOutputData) {}
+    rpc BidirectionalStreamingRPC (stream SimpleInputData) returns (stream SimpleOutputData) {}
+}
+
+message SimpleInputData {
+    string msg = 1;
+    int64 delay = 2;
+    int64 totalMessages = 3;
+}
+
+message SimpleOutputData {
+    string msg = 1;
+}

@@ -1,0 +1,18 @@
+{
+  "pipelineId": "httpServerToTrash",
+  "title": "HTTP Server To Trash",
+  "description": "",
+  "created": 1526188042664,
+  "lastModified": 1526188664,
+  "creator": "admin",
+  "lastModifier": "admin",
+  "lastRev": "0",
+  "uuid": "4fec25c1-be27-4b0d-b0f2-f4cd82b70cc2",
+  "valid": true,
+  "metadata": {
+    "labels": []
+  },
+  "name": "httpServerToTrash",
+  "sdcVersion": "3.4.0-SNAPSHOT",
+  "sdcId": "d67e5ea5-553a-11e8-afdc-27d45acea1fe"
+}

@@ -1,0 +1,18 @@
+{
+  "pipelineId": "localedgea0c69b40-c75a-4336-ab0a-5c0948040c68",
+  "title": "local edge",
+  "description": "",
+  "created": 1633589577854,
+  "lastModified": 1633698754,
+  "creator": "admin",
+  "lastModifier": "admin",
+  "lastRev": "0",
+  "uuid": "ed69163c-a651-4b35-b003-325956a62edf",
+  "valid": true,
+  "metadata": {
+    "labels": []
+  },
+  "name": "localedgea0c69b40-c75a-4336-ab0a-5c0948040c68",
+  "sdcVersion": "3.23.0-SNAPSHOT",
+  "sdcId": "fbab752b-903b-11eb-9824-3fc8cb3839a8"
+}

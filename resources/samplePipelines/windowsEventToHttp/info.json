@@ -1,0 +1,18 @@
+{
+  "pipelineId": "windowsEventToHttp",
+  "title": "Windows Event Log To HTTP",
+  "description": "",
+  "created": 1526188043469,
+  "lastModified": 1526188664,
+  "creator": "admin",
+  "lastModifier": "admin",
+  "lastRev": "0",
+  "uuid": "07c000fe-2ce5-4ae8-a286-7f0af49c42b2",
+  "valid": true,
+  "metadata": {
+    "labels": []
+  },
+  "name": "windowsEventToHttp",
+  "sdcVersion": "3.4.0-SNAPSHOT",
+  "sdcId": "d67e5ea5-553a-11e8-afdc-27d45acea1fe"
+}

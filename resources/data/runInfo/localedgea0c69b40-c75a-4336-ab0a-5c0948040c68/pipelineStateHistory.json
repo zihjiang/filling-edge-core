@@ -1,0 +1,5 @@
+{"pipelineId":"localedgea0c69b40-c75a-4336-ab0a-5c0948040c68","status":"EDITED","message":"","timeStamp":1633592494188,"attributes":{"IS_REMOTE_PIPELINE":false},"metrics":""}
+{"pipelineId":"localedgea0c69b40-c75a-4336-ab0a-5c0948040c68","status":"EDITED","message":"","timeStamp":1633592494188,"attributes":{"IS_REMOTE_PIPELINE":false},"metrics":""}
+{"pipelineId":"localedgea0c69b40-c75a-4336-ab0a-5c0948040c68","status":"RUNNING","message":"","timeStamp":1633698603166,"attributes":{"IS_REMOTE_PIPELINE":false},"metrics":""}
+{"pipelineId":"localedgea0c69b40-c75a-4336-ab0a-5c0948040c68","status":"STOPPED","message":"","timeStamp":1633698679083,"attributes":{"IS_REMOTE_PIPELINE":false},"metrics":""}
+{"pipelineId":"localedgea0c69b40-c75a-4336-ab0a-5c0948040c68","status":"RUNNING","message":"","timeStamp":1633698754432,"attributes":{"IS_REMOTE_PIPELINE":false},"metrics":""}

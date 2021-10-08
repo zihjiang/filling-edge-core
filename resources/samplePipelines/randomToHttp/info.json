@@ -1,0 +1,18 @@
+{
+  "pipelineId": "randomToHttp",
+  "title": "Random To HTTP",
+  "description": "",
+  "created": 1526188043018,
+  "lastModified": 1526188664,
+  "creator": "admin",
+  "lastModifier": "admin",
+  "lastRev": "0",
+  "uuid": "e7ff93df-5b4c-4218-9195-7ee7c17d328a",
+  "valid": true,
+  "metadata": {
+    "labels": []
+  },
+  "name": "randomToHttp",
+  "sdcVersion": "3.4.0-SNAPSHOT",
+  "sdcId": "d67e5ea5-553a-11e8-afdc-27d45acea1fe"
+}
