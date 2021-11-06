@@ -266,7 +266,7 @@ func TestStringEL(test *testing.T) {
 		},
 		{
 			Name:       "Test function str:split - Error 2",
-			Expression: "${str:split('a,b,c,d', ',', '123')}",
+			Expression: "${str:split('a,b,c,d', ',', '3d967ed5-556d-4b4c-a0d0-33e5fbe344e4')}",
 			Expected:   "The function 'str:split' requires 2 arguments but was passed 3",
 			ErrorCase:  true,
 		},

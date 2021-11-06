@@ -3,12 +3,12 @@ package controlhub
 
 import (
 	"bytes"
+	"datacollector-edge/container/common"
 	"encoding/json"
 	"errors"
 	"fmt"
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cast"
-	"datacollector-edge/container/common"
 	"io"
 	"io/ioutil"
 	"net/http"
@@ -169,6 +169,7 @@ func EnableControlHub(
 }
 
 func getControlHubOrgId(controlHubUser string) string {
+	fmt.Printf("controlHubUser", controlHubUser)
 	strArr := strings.Split(controlHubUser, "@")
 	if len(strArr) < 2 {
 		panic("Invalid Control Hub User Id")

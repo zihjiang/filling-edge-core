@@ -1,4 +1,3 @@
-
 package dev_random
 
 import (

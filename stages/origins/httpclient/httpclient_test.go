@@ -2,11 +2,11 @@
 package httpclient
 
 import (
-	"fmt"
 	"datacollector-edge/api"
 	"datacollector-edge/container/common"
 	"datacollector-edge/container/creation"
 	"datacollector-edge/container/execution/runner"
+	"fmt"
 	"net/http"
 	"net/http/httptest"
 	"testing"

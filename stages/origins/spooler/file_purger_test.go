@@ -15,7 +15,7 @@ func TestFilePurger_purge(t *testing.T) {
 	defer deleteTestDirectory(t, testDir)
 
 	//Create a.txt,c.txt,b.txt with different mod times
-	createFileAndWriteContents(t, filepath.Join(testDir, "a.txt"), "123\n456", dataparser.CompressedNone)
+	createFileAndWriteContents(t, filepath.Join(testDir, "a.txt"), "3d967ed5-556d-4b4c-a0d0-33e5fbe344e4\n456", dataparser.CompressedNone)
 	createFileAndWriteContents(t, filepath.Join(testDir, "b.txt"), "111213\n141516", dataparser.CompressedNone)
 	createFileAndWriteContents(t, filepath.Join(testDir, "c.txt"), "111112113\n114115116\n117118119", dataparser.CompressedNone)
 

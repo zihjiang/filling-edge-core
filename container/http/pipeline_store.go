@@ -2,10 +2,10 @@
 package http
 
 import (
+	"datacollector-edge/container/common"
 	"encoding/json"
 	"fmt"
 	"github.com/julienschmidt/httprouter"
-	"datacollector-edge/container/common"
 	"io"
 	"net/http"
 )

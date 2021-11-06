@@ -169,8 +169,8 @@ func (dest *KafkaDestination) Init(context api.StageContext) []validation.Issue 
 	}
 	dest.brokerList = strings.Split(dest.Conf.MetadataBrokerList, ",")
 
-	//dest.kafkaClient, err = sarama.NewClient(dest.brokerList, dest.kafkaClientConf)
-	dest.kafkaClient, err = sarama.NewClient([]string{"10.10.14.43:9092"}, dest.kafkaClientConf)
+	dest.kafkaClient, err = sarama.NewClient(dest.brokerList, dest.kafkaClientConf)
+	//dest.kafkaClient, err = sarama.NewClient([]string{"10.10.14.43:9092"}, dest.kafkaClientConf)
 	if err != nil {
 		issues = append(issues, context.CreateConfigIssue(err.Error()))
 		return issues

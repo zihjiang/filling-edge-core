@@ -1,7 +1,10 @@
-
 package system_metrics
 
 import (
+	"datacollector-edge/api"
+	"datacollector-edge/api/validation"
+	"datacollector-edge/container/common"
+	"datacollector-edge/stages/stagelibrary"
 	"encoding/json"
 	"github.com/shirou/gopsutil/cpu"
 	"github.com/shirou/gopsutil/disk"
@@ -10,10 +13,6 @@ import (
 	"github.com/shirou/gopsutil/net"
 	"github.com/shirou/gopsutil/process"
 	log "github.com/sirupsen/logrus"
-	"datacollector-edge/api"
-	"datacollector-edge/api/validation"
-	"datacollector-edge/container/common"
-	"datacollector-edge/stages/stagelibrary"
 	"regexp"
 	"time"
 )

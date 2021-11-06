@@ -1,14 +1,13 @@
-
 package edge
 
 import (
-	"github.com/BurntSushi/toml"
-	log "github.com/sirupsen/logrus"
 	"datacollector-edge/container/controlhub"
 	"datacollector-edge/container/execution"
 	"datacollector-edge/container/http"
 	"datacollector-edge/container/process"
 	"datacollector-edge/container/util"
+	"github.com/BurntSushi/toml"
+	log "github.com/sirupsen/logrus"
 	"os"
 )
 

@@ -3,11 +3,6 @@ package main
 
 import (
 	"crypto/tls"
-	"flag"
-	"fmt"
-	"github.com/kardianos/service"
-	log "github.com/sirupsen/logrus"
-	"github.com/spf13/cast"
 	"datacollector-edge/container/common"
 	"datacollector-edge/container/controlhub"
 	"datacollector-edge/container/edge"
@@ -15,6 +10,11 @@ import (
 	_ "datacollector-edge/stages/origins"
 	_ "datacollector-edge/stages/processors"
 	_ "datacollector-edge/stages/services"
+	"flag"
+	"fmt"
+	"github.com/kardianos/service"
+	log "github.com/sirupsen/logrus"
+	"github.com/spf13/cast"
 	"net/http"
 	"os"
 	"os/signal"

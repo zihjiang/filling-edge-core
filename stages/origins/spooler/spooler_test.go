@@ -289,7 +289,7 @@ func testUseLastModified(t *testing.T, compression string) {
 	defer deleteTestDirectory(t, testDir)
 
 	//Create a.txt,c.txt,b.txt with different mod times
-	createFileAndWriteContents(t, filepath.Join(testDir, "a.txt"), "123\r\n456", compression)
+	createFileAndWriteContents(t, filepath.Join(testDir, "a.txt"), "3d967ed5-556d-4b4c-a0d0-33e5fbe344e4\r\n456", compression)
 	createFileAndWriteContents(t, filepath.Join(testDir, "c.txt"), "111112113\n114115116\n117118119", compression)
 	createFileAndWriteContents(t, filepath.Join(testDir, "b.txt"), "111213\n141516", compression)
 
@@ -320,7 +320,7 @@ func testUseLastModified(t *testing.T, compression string) {
 		Offset:   "0",
 	}
 
-	checkRecord(t, records[0], "/text", "123", expectedHeaders)
+	checkRecord(t, records[0], "/text", "3d967ed5-556d-4b4c-a0d0-33e5fbe344e4", expectedHeaders)
 
 	expectedHeaders = map[string]string{
 		File:     filepath.Join(testDir, "a.txt"),
@@ -401,7 +401,7 @@ func testLexicographical(t *testing.T, compression string) {
 	defer deleteTestDirectory(t, testDir)
 
 	//Create a.txt,c.txt,b.txt with different mod times
-	createFileAndWriteContents(t, filepath.Join(testDir, "a.txt"), "123\n456", compression)
+	createFileAndWriteContents(t, filepath.Join(testDir, "a.txt"), "3d967ed5-556d-4b4c-a0d0-33e5fbe344e4\n456", compression)
 	createFileAndWriteContents(t, filepath.Join(testDir, "b.txt"), "111213\n141516", compression)
 	createFileAndWriteContents(t, filepath.Join(testDir, "c.txt"), "111112113\n114115116\n117118119", compression)
 
@@ -436,7 +436,7 @@ func testLexicographical(t *testing.T, compression string) {
 		Offset:   "0",
 	}
 
-	checkRecord(t, records[0], "/text", "123", expectedHeaders)
+	checkRecord(t, records[0], "/text", "3d967ed5-556d-4b4c-a0d0-33e5fbe344e4", expectedHeaders)
 
 	expectedHeaders = map[string]string{
 		File:     filepath.Join(testDir, "a.txt"),
@@ -653,7 +653,7 @@ func testLexicographical_JSON_FORMAT(t *testing.T, compression string) {
 	defer deleteTestDirectory(t, testDir)
 
 	//Create a.txt,c.txt,b.txt with different mod times
-	createFileAndWriteContents(t, filepath.Join(testDir, "a.txt"), "{\"text\": \"123\"}\n{\"text\": \"456\"}", compression)
+	createFileAndWriteContents(t, filepath.Join(testDir, "a.txt"), "{\"text\": \"3d967ed5-556d-4b4c-a0d0-33e5fbe344e4\"}\n{\"text\": \"456\"}", compression)
 	createFileAndWriteContents(t, filepath.Join(testDir, "b.txt"), "{\"text\": \"111213\"}\n{\"text\": \"141516\"}", compression)
 	createFileAndWriteContents(t, filepath.Join(testDir, "c.txt"), "{\"text\": \"111112113\"}\n{\"text\": \"117118119\"}", compression)
 
@@ -691,7 +691,7 @@ func testLexicographical_JSON_FORMAT(t *testing.T, compression string) {
 		Offset:   "0",
 	}
 
-	checkRecord(t, records[0], "/text", "123", expectedHeaders)
+	checkRecord(t, records[0], "/text", "3d967ed5-556d-4b4c-a0d0-33e5fbe344e4", expectedHeaders)
 
 	expectedHeaders = map[string]string{
 		File:     filepath.Join(testDir, "a.txt"),
@@ -1387,7 +1387,7 @@ func TestErrorArchiving(t *testing.T) {
 	defer deleteTestDirectory(t, testDir)
 
 	//Create a.txt,c.txt,b.txt with different mod times
-	createFileAndWriteContents(t, filepath.Join(testDir, "a.txt"), "{\"text\": \"123\"}\n{\"text\": \"456\"}", dataparser.CompressedNone)
+	createFileAndWriteContents(t, filepath.Join(testDir, "a.txt"), "{\"text\": \"3d967ed5-556d-4b4c-a0d0-33e5fbe344e4\"}\n{\"text\": \"456\"}", dataparser.CompressedNone)
 	createFileAndWriteContents(t, filepath.Join(testDir, "b.txt"), "{\"text\": \"111213\"}\n{\"text\": \"141516\"}", dataparser.CompressedFile)
 	createFileAndWriteContents(t, filepath.Join(testDir, "c.txt"), "{\"text\": \"111112113\"}\n{\"text\": \"117118119\"}", dataparser.CompressedNone)
 

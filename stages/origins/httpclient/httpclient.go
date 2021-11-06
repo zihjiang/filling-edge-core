@@ -3,15 +3,15 @@ package httpclient
 
 import (
 	"bytes"
-	"errors"
-	"fmt"
-	log "github.com/sirupsen/logrus"
 	"datacollector-edge/api"
 	"datacollector-edge/api/validation"
 	"datacollector-edge/container/common"
 	"datacollector-edge/stages/lib/dataparser"
 	"datacollector-edge/stages/lib/httpcommon"
 	"datacollector-edge/stages/stagelibrary"
+	"errors"
+	"fmt"
+	log "github.com/sirupsen/logrus"
 	"io/ioutil"
 	"net/http"
 	"time"
